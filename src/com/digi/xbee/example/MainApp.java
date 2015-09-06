@@ -6,7 +6,8 @@ import com.digi.xbee.api.exceptions.XBeeException;
 import com.digi.xbee.api.models.XBee64BitAddress;
  
 public class MainApp {
-    private static final String PORT = "COM3";
+//    private static final String PORT = "COM3";
+	private static final String PORT = "/dev/tty.usbserial-DA01M6QM";
     private static final int BAUD_RATE = 9600;
      
     private static final String DATA_TO_SEND = "Hello XBee World!";
