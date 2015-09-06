@@ -11,8 +11,6 @@ public class MyDataReceiveListener implements IDataReceiveListener {
      */
     @Override
     public void dataReceived(XBeeMessage xbeeMessage) {
-//        String address = xbeeMessage.getXBeeAddress().toString();
-//    	int var = xbeeMessage.getDataString();
     	String var = "";
         try {
         	var = new String(xbeeMessage.getData(), "UTF-8");
@@ -22,5 +20,8 @@ public class MyDataReceiveListener implements IDataReceiveListener {
 		}
         System.out.println("Received data" +
                 ": " + var);
+        if (var.length() > 5) {
+        	System.out.println("fuck");
+        }
     }
 }

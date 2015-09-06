@@ -42,7 +42,6 @@ public class MainApp {
         // example: try to receive
     	XBeeDevice myXBeeDevice = new XBeeDevice("COM3", 9600);
     	myXBeeDevice.open();
- 
     	MyDataReceiveListener myDataReceiveListener = new MyDataReceiveListener();
 
     	myXBeeDevice.addDataListener(myDataReceiveListener);
